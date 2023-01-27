@@ -1,6 +1,8 @@
 import React from 'react';
 import Logo from "../../Assets/logo.gif";
 import './Header.css';
+import {Link} from "react-router-dom";
+
 
 export const Header = () => {
     return ( 
@@ -8,18 +10,18 @@ export const Header = () => {
         <img src={Logo} className="logo" />
         <div className = "nav-items">
             <ul className="item-list">
-            <li className="item">
+            <Link to = "/"><li className="item">
                 Home
-            </li>
-            <li className="item">
+            </li></Link>
+            <Link to = "/testimonials"><li className="item">
                 Blogs
-            </li>
-            <li className="item">
+            </li></Link>
+            <Link to="/">            <li className="item">
                 About
-            </li>
-            <li className="item">
+            </li></Link>
+            <Link to = "/testimonials"><li className="item">
                 Testimonials
-            </li>
+            </li></Link>
             </ul>
         </div>
         </div>
