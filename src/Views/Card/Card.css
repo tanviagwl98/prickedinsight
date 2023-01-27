@@ -1,0 +1,29 @@
+.card {
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    box-shadow: 3px 3px 3px 3px gray;
+    margin: 5px
+}
+
+.user {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.feedback {
+    font-size: 13px;
+    margin-bottom: -15px;
+}
+
+.title {
+    margin-bottom: -10px;
+}
+
+.designation {
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 1px;
+}

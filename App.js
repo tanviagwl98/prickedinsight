@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import {MainPage} from "./src/Components/MainPage/MainPage";
 
 const heading = React.createElement(
     "h1", {
@@ -19,5 +20,6 @@ const container = React.createElement(
     }, [heading, heading2]
 );
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render( <MainPage/> );
