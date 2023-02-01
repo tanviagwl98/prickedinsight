@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import { Card } from "../../Views/Card/Card";
 import "../../Components/Testimonials/Testimonials.css";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
@@ -32,10 +31,14 @@ const ExpandMore = styled((props) => {
 
 export const Testimonials = () => {
   const [testimonial] = useState(testimonials);
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState({});
 
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
+  const handleExpandClick = (id) => {
+    //setExpanded(expanded === id ? null : id);
+    setExpanded({
+      ...expanded,
+      [id]: !expanded[id]
+    });
   };
 
   return (
@@ -50,18 +53,18 @@ export const Testimonials = () => {
                 {testimonial.content}
               </Typography>
             </CardContent>
-            <CardActions disableSpacing>
+            <CardActions>
               <ExpandMore
-                expand={expanded}
-                onClick={handleExpandClick}
-                aria-expanded={expanded}
+                expand={expanded[testimonial.id]}
+                onClick={() => handleExpandClick(testimonial.id)}
+                aria-expanded={expanded[testimonial.id]}
                 aria-label="show more"
               >
                 <ExpandMoreIcon />
               </ExpandMore>
             </CardActions>
-
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
+          
+            <Collapse in={expanded[testimonial.id]} timeout="auto" unmountOnExit>
               <CardContent>
                 <Typography paragraph>{testimonial.content}</Typography>
               </CardContent>

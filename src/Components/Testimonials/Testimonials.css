@@ -26,3 +26,7 @@
     margin: 20px;
     box-shadow: thistle;
 }
+
+.fixHeight{
+    height:400px;
+}
