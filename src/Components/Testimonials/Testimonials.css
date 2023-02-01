@@ -14,3 +14,15 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 20px
+}
+
+.cardItem {
+    margin: 20px;
+    box-shadow: thistle;
+}
