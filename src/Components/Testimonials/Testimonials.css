@@ -27,6 +27,11 @@
     box-shadow: thistle;
 }
 
-.fixHeight{
-    height:400px;
+.testimonialImg{
+    height:100px;
+    width:100px ! important;
 }
+
+.MuiAvatar-root {
+    background-color: transparent;
+  }
