@@ -30,36 +30,40 @@ export const Testimonials = () => {
   // };
 
   return (
-    <div className="testimonial">
-      {testimonial.map((testimonial) => {
-        return (
-          <Card sx={{ maxWidth: 300 }} className="cardItem" key={testimonial.id}>
-            <CardHeader 
-            title={testimonial.name} 
-            subheader={testimonial.date}
-            action={
-              <div
-                style={{
-                  backgroundImage: `url(${testimonial.image})`,
-                  height: "100px",
-                  width: "100px",
-                  backgroundSize: "cover",
-                  backgroundPosition:"center",
-                  borderRadius: "50%",
-                  
-                }}
-              />
-            }>
-
-              
-            </CardHeader>
-            {/* <CardMedia component="img" image={testimonial.image} alt="User" className="testimonialImg" /> */}
-            <CardContent>
-              <Typography variant="body2" color="text.secondary">
-                {testimonial.content}
-              </Typography>
-            </CardContent>
-            {/* <CardActions>
+    <>
+      {" "}
+      <h1 className="headingTitle">Testimonials</h1>
+      <div className="testimonial">
+        {testimonial.map((testimonial) => {
+          return (
+            <Card
+              sx={{ maxWidth: 300 }}
+              className="cardItem"
+              key={testimonial.id}
+            >
+              <CardHeader
+                title={testimonial.name}
+                subheader={testimonial.date}
+                action={
+                  <div
+                    style={{
+                      backgroundImage: `url(${testimonial.image})`,
+                      height: "100px",
+                      width: "100px",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      borderRadius: "50%",
+                    }}
+                  />
+                }
+              ></CardHeader>
+              {/* <CardMedia component="img" image={testimonial.image} alt="User" className="testimonialImg" /> */}
+              <CardContent>
+                <Typography variant="body2" color="text.secondary">
+                  {testimonial.content}
+                </Typography>
+              </CardContent>
+              {/* <CardActions>
               <ExpandMore
                 expand={expanded[testimonial.id]}
                 onClick={() => handleExpandClick(testimonial.id)}
@@ -75,9 +79,10 @@ export const Testimonials = () => {
                 <Typography paragraph>{testimonial.content}</Typography>
               </CardContent>
             </Collapse> */}
-          </Card>
-        );
-      })}
-    </div>
+            </Card>
+          );
+        })}
+      </div>
+    </>
   );
 };

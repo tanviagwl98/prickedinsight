@@ -31,7 +31,7 @@ function HorizontalCarousel() {
   };
   return (
     <div className="container">
-      <KeyboardArrowLeft onClick={slideLeft} className="leftBtn" />
+      <KeyboardArrowLeft sx={{ color: "pink", fontSize: 60, fontWeight:"bold" }} onClick={slideLeft} className="leftBtn" />
 
       <div className="card-container">
         {carouselData.map((card, n) => {
@@ -41,10 +41,10 @@ function HorizontalCarousel() {
               : n === slideIndex
               ? "activeCard"
               : "prevCard";
-          return <CarouselCard {...card} cardStyle={position} />;
+          return <CarouselCard {...card} cardStyle={position} key={card.id}/>;
         })}
       </div>
-      <KeyboardArrowRight onClick={slideRight} className="rightBtn" />
+      <KeyboardArrowRight sx={{ color: "pink", fontSize: 60, fontWeight:"bold" }} onClick={slideRight} className="rightBtn" />
     </div>
   );
 }

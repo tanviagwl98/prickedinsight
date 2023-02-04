@@ -25,6 +25,10 @@
     margin: 10px
 }
 
+.items {
+    text-decoration: none;
+}
+
 .item {
     margin: 10px;
     padding: 10px;

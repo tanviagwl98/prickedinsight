@@ -1,0 +1,47 @@
+.headingTitle {
+    text-align: center;
+    font-size: 40px !important;
+    background-image: linear-gradient(to right, #20cb45, #f52712);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.blogPage {
+    width: 100%
+}
+
+.blogSection {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 25px;
+    padding: 8px;
+}
+
+.blogHeader {
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogTitle {
+    font-weight: 700;
+}
+
+.shortContent {
+    margin-top: 5px;
+}
+
+.showBtn {
+    margin-top: 15px
+}
+
+.blogImage {
+    width: 200px;
+}

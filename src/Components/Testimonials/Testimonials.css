@@ -23,15 +23,15 @@
 }
 
 .cardItem {
-    margin: 20px;
-    box-shadow: thistle;
+    margin: 10px;
+    box-shadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
 }
 
-.testimonialImg{
-    height:100px;
-    width:100px ! important;
+.testimonialImg {
+    height: 100px;
+    width: 100px ! important;
 }
 
 .MuiAvatar-root {
     background-color: transparent;
-  }
+}

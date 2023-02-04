@@ -9,17 +9,17 @@ export const Header = () => {
       <img src={Logo} className="logo" />
       <div className="nav-items">
         <ul className="item-list">
-          <Link to="/">
+          <Link to="/" className="items">
             <li className="item">Home</li>
           </Link>
-          <Link to="/blogs">
-            <li className="item">Blogs</li>
+          <Link to="/blogs" className="items">
+            <li className="item" >Blogs</li>
           </Link>
-          <Link to="/">
+          <Link to="/" className="items">
             {" "}
             <li className="item">About</li>
           </Link>
-          <Link to="/testimonials">
+          <Link to="/testimonials" className="items">
             <li className="item">Testimonials</li>
           </Link>
         </ul>
