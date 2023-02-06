@@ -11,12 +11,12 @@
     align-self: center;
     display: flex;
     justify-content: space-between;
-    height: max-content;
+    /* height: 20%; */
     margin: 20px;
 }
 
 .card-container {
-    position: relative;
+    /* position: relative; */
     width: 70%;
 }
 
@@ -43,15 +43,15 @@
 
 .imageSize {
     width: 400px;
-    height: 200px;
-    margin: 20px;
+    height: 250px;
+    align-self: center;
+    margin:8px;
 }
 
 .leftBtn {
     margin-left: 20px;
     font-size: 20px;
     align-self: center;
-    font-size: 20px;
 }
 
 .rightBtn {
