@@ -6,6 +6,7 @@ import Error from "../Components/Error";
 import { Home } from "../Components/Home/Home";
 import { Testimonials } from "../Components/Testimonials/Testimonials";
 import Blog from "../Components/Blog/Blog";
+import About from "../Components/About/About";
 
 const AppLayout = () => {
   return (
@@ -35,6 +36,10 @@ const AppRouter = createBrowserRouter([
         path: "/blogs",
         element: <Blog />,
       },
+      {
+        path:"/about",
+        element:<About />
+      }
     ],
   },
 ]);
