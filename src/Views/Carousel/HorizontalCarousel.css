@@ -1,49 +1,46 @@
-/* @media screen and (max-width: 425px) {
-    .container {
-      width: 100%;
-      overflow: hidden;
-    } */
-
 .container {
-    /* margin-right:20px; */
     border: 1px solid lightgray;
     border-radius: 5px;
     align-self: center;
     display: flex;
     justify-content: space-between;
-    /* height: 20%; */
     margin: 20px;
+    height:1%;
 }
 
 .card-container {
     /* position: relative; */
-    width: 70%;
+    width: 100%;
 }
 
-.imagePosition {
+/* .imagePosition {
     align-self: center;
-}
+} */
 
 .prevCard {
     left: -35%;
     opacity: 0;
+    align-self: center;
+
 }
 
 .activeCard {
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+    align-self: center;
 }
 
 .nextCard {
     left: 135%;
     transform: translateX(calc(-100% - 2rem));
     opacity: 0;
+    align-self: center;
 }
 
 .imageSize {
-    width: 400px;
-    height: 250px;
+    /* width: fit-content; */
+    height: 200px;
     align-self: center;
     margin:8px;
 }

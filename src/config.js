@@ -41,7 +41,7 @@ export const carousel = [
     id: 1,
     name: "Tanvi Agarwal",
     date: "28-01-2023",
-    image: require("./Assets/user.jpg"),
+    image: require("./Assets/CarouselCard1.png"),
     content:"Test"
   },
   {
@@ -55,7 +55,7 @@ export const carousel = [
     id: 3,
     name: "Tanvi Agarwal",
     date: "28-01-2023",
-    image: require("./Assets/user.jpg"),
+    image: require("./Assets/CarouselCard1.png"),
     content:"Test"
   }
 ]
