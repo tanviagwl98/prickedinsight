@@ -8,8 +8,7 @@ import CarouselCard from "./CarouselCard";
 // } from "@fortawesome/free-solid-svg-icons";
 import {
   KeyboardArrowLeft,
-  KeyboardArrowRight,
-  KeyboardArrrowRight,
+  KeyboardArrowRight
 } from "@mui/icons-material";
 import "./HorizontalCarousel.css";
 

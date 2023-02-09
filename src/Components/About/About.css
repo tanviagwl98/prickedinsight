@@ -1,0 +1,42 @@
+.aboutContainer{
+    display:flex;
+    justify-content: space-between;
+    margin:20px
+}
+
+.introduction{
+    font-size:40px;
+    margin:20px;
+    align-self: center;
+}
+.creator{
+    width:300px;
+    height:300px;
+    border-radius: 8px;
+    margin:20px
+}
+
+.leftQuote{
+    transform:rotate(180deg);
+}
+
+.cardContent{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}    
+
+.headinTitle{
+    text-align: center;
+    font-size: 40px !important;
+    background-image: linear-gradient(to right, #20cb45, #f52712);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+/* .cardRow{
+    display:flex;
+    justify-content: center;
+
+} */
